@@ -1,0 +1,1 @@
+Finished Basic / Initial Navbar styling. As is, no <a> styling yet.
