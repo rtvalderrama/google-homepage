@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<div class="wrapper">
+<head>
+        <title>Google</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <header>
+</head>
+<header>
         <div class="nav-bar">
-            <ul>
-                <li><a>Gmail</a></li>
-                <li><a>Images</a></li>
-                <li><a><i class="material-icons">&#xe5c3;</i></a></li>
-                <li><input id="signin" type="submit" value="Sign In"></li>
+            <ul class="top_left">
+                <li class="top_li" id="top_all"><a><i class="material-icons">&#xe3c7;</i></a></li>
+                <li class="top_li_left" id="top_all"><a class="active">ALL</a></li>                
+                <li class="top_li_left" id="top_all"><a>IMAGES</a></li>      
+            </ul>
+            <ul class="top">
+                <li class="top_li" id="full_pg"><a>Gmail</a></li>
+                <li class="top_li" id="full_pg"><a>Images</a></li>
+                <li class="top_li"><a><i class="material-icons" title="Google apps">&#xe5c3;</i></a></li>
+                <li class="top_li"><input id="signin" type="submit" value="Sign In"></li>
             </ul>
         </div>
-    </header>
+</header>
 <body>
+    <article class="main_body">
     <div class="main_cont">
         <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
-    <div class="forms">
-        <form action="/action_page.php">
-        <input type="text" name="search"></form>
+    <div class="search_wrap">
+        <div class="search_cont">
+            <div class="search_col">
+                <i id="search_icon" class="material-icons">&#xe8b6;</i></div>
+            <div class="search_col">
+                <form action="/action_page.php">
+                <input class="search_bar" type="text" name="search"></form></div>
+            <div class="mic_col">
+                <i id="search_icon" class="material-icons">&#xe31d;</i></div>
+        </div>
     </div>
     <div class="sub_buttons">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
+        <input class="submit_buttons" type="submit" value="Google Search">
+        <input class="submit_buttons" type="submit" value="I'm Feeling Lucky">
     </div>
     <div class="sub">
-        <p class="subtext">Google offered in <a>Bisaya</a>&nbsp<a>Bicolano</a></p>
+        <p class="subtext">Google offered in: <a class="language">Bisaya</a>&nbsp<a class="language">Bicolano</a></p>
     </div>
-        
+</article>
 </body>
 <footer>
     <div class="foot_div">
         <p class="foot_p">Philippines</p>
     </div>
-    <nav id="left_links">
-        <ul>
-            <li>Advertising</li>
-            <li>Business</li>
-            <li>About</li>
-            <li>How Search Works</li>
+    <div class="foot_links">
+        <ul class="right">
+            <li class="bottom_li">Privacy</li>
+            <li class="bottom_li">Terms</li>
+            <li class="bottom_li">Settings</li>
         </ul>
-    </nav>
+        <ul class="left">
+            <li class="bottom_li">Advertising</li>
+            <li class="bottom_li">Business</li>
+            <li class="bottom_li">About</li>
+            <li class="bottom_li" id="full_only">How Search works</li>
+        </ul>
+    </div>
 </footer>
+</div>
 </html>
